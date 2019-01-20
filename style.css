@@ -1,78 +1,18 @@
-.row-1
- {
-  
- width: 100%;
-  height: 20%;
-  border-collapse: collapse;
-}
-
-
-.row-2 
-{
-  background-color:;
-
-opacity: 1;
+.drag 
+{ position:relative;
+ cursor:hand; 
+z-index: 100;
+ }
+.vxod{
+background-color:orange;
 
 }
+#magazin{
+width:60%;
+display: block;
+margin:auto;
+background-color:#dddddd;
 
 
-.row-3 {
-  
-background-color: #52815626;
-
-opacity: 1;
-
- width: 100%;
-height: 1px;
-}
-
-.row-4 {
-  
-background-color: #555555;
-
-}
-jo{
-font-size: 20px;
-}
-new{
-height: 500px;
-
-
-}
-
-table 
-{
-  border-collapse: collapse;
- /* border: 0px black*/;
-
-}
-
-
-td
- {
-  padding: 5px;
-  padding-right: 10px;
-  border: 0px solid black;
-
-}
-
-
-th
- {
-  padding: 10px;
-  border: 0px blck;
-
-}
-
-
-caption 
-{
-  margin-bottom: 10px;
-  font-size: 18px;
-
-}
-
-table {  width: 50%;
-  height: 100%;
-  border-collapse: collapse;
+border-radius: 3%;
 }
