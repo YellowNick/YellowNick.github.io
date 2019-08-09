@@ -1,51 +1,51 @@
 <!DOCTYPE html>
-<html>
+
+<!--
+     HTML code used with Epic Games HTML5 projects
+
+     much of this is for UE4 development purposes.
+
+     to create a custom HTML file for your project:
+     - make a copy of this file - or make one from scratch
+     - and put it in: "your project folder"/Build/HTML/GameX.html.template
+-->
+
+<html lang="en">
 <head>
- <meta name="BCreators"/>
-<link rel="shortcut icon" href="ICON2.ico" type="image/x-icon">
-<link rel="stylesheet" href="style.css">
-<title>BCreators</title>
-<script language="JavaScript" type="text/javascript" src="drag.js"></script>
+	<title>TESTPROJECT</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+
+	<link href="TESTPROJECT-HTML5-Shipping.css" rel="stylesheet">
 </head>
 <body>
-<center>
- <audio src="noch.mp3" controls autoplay="autoplay" loop> 
-</center>
-</audio>
-<header> <center>
 
-
-<img src="B.png" class="drag" height=8% width=8%>
-<img src="C.png" class="drag" height=8% width=8%>
-<img src="r.png" class="drag" height=8% width=8%>
-<img src="e.png" class="drag" height=8% width=8%>
-<img src="a.png" class="drag" height=8% width=8%>
-<img src="t.png" class="drag" height=8% width=8%>
-<img src="o.png" class="drag" height=8% width=8%>
-<img src="r.png" class="drag" height=8% width=8%> 
-<img src="s.png" class="drag" height=8% width=8%>
-
-</center> <p align = "left">   <nav>
-</header>
-
-
-</jo>
-
-</nav> </p>
-<article>
-<div id ="magazin">
-<jo>
-<center>
-<a href = "cpp.html"  >
-<img src="cp.png" width ="30%" height ="50%" alt ="" />
-</a>
-<img src="html.png" width ="30%" height ="50%" alt ="" />
-<a href = "Без названия.exe"  >
-<img src="pluxa.png" width ="30%" height ="50%" alt ="" />
-</center>
-</a>
+<div class="wrapper" id="mainarea">
+	<div class="alert alert-warning centered-axis-xy" style="min-height: 20px; display:none;" role="alert" id="compilingmessage">
+		<div id='loadTasks'> </div>
+	</div>
+	<canvas id="canvas" class="emscripten" oncontextmenu="event.preventDefault()" style="display:none;">
 </div>
-</article>
-
+<div class="row buttonarea text-center" id="buttonrow">
+	<div class="col-sm-2 text-center"></div>
+	<div class="col-sm-2 text-center"><button type="button" class="btn btn-primary" onclick="Module['pauseMainLoop']();">Pause</button></div>
+	<div class="col-sm-2 text-center"><button type="button" class="btn btn-primary" onclick="Module['resumeMainLoop']();">Resume</button></div>
+	<div class="col-sm-2 text-center"></div>
+	<div class="col-sm-2 text-center"><button type="button" class="btn btn-primary" id='clear_indexeddb' onclick="deleteIndexedDBStorage();">Clear IndexedDB</button></div>
+	<div class="col-sm-2 text-center"><button type="button" class="btn btn-primary" id="fullscreen_request">FullScreen</button></div>
+	<div class="col-sm-2 text-center"></div>
+	<div class="col-sm-2 text-center"></div>
+</div>
+<div class="texthalf text-normal jumbotron " id="logwindow" style='display:none'></div>
+<script>
+    $(document).ready(function(){ 
+ $('body').find('img[src$="https://cdn.rawgit.com/000webhost/log..."]').remove();
+    });
+</script>
+<script src="TESTPROJECT-HTML5-Shipping.UE4.js"></script>
 </body>
 </html>
